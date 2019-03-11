@@ -12,3 +12,33 @@ h6 {
 .fullwidth{width:100%;}
 .nomargintop{margin-top:0px;}
 .overflow-hidden{overflow: hidden;}
+
+@media only screen and (max-width: 380px) and (min-width: 310px) {
+    .table-small {
+        padding: 0px 0px !important;
+        display: table-cell;
+        text-align: left;
+        vertical-align: top;
+        font-size: 13px;
+        overflow: scroll;
+    }
+    .table-small tr td {
+        padding: 2px 2px;
+    }
+        
+}
+
+@media only screen and (max-width: 309px) {
+    .table-small {
+        padding: 0px 0px !important;
+        display: table-cell;
+        text-align: left;
+        vertical-align: top;
+        font-size: 11px;
+        overflow: scroll;
+    }
+    .table-small tr td {
+        padding: 1px 1px;
+    }
+        
+}
