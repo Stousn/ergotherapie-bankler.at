@@ -13,6 +13,8 @@ h6 {
 .nomargintop{margin-top:0px;}
 .overflow-hidden{overflow: hidden;}
 
+.printonly{display: none;}
+
 @media only screen and (max-width: 380px) and (min-width: 310px) {
     .table-small {
         padding: 0px 0px !important;
@@ -41,4 +43,35 @@ h6 {
         padding: 1px 1px;
     }
         
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  html, body {
+    width: 210mm;
+    height: 297mm;
+  }
+  h2 {
+    font-size: 14pt;
+  }
+  footer {
+      display: none;
+  }
+  .printonly {
+      display: block;
+  }
+  .w3-text-white, .w3-hover-text-white:hover {
+    color: #fff !important;
+  }
+  .w3-amber, .w3-hover-amber:hover {
+    color: #000 !important;
+    background-color: #ffc107 !important;
+  }
+  .w3-round-xlarge {
+    border-radius: 16px;
+}
+  /* ... the rest of the rules ... */
 }
