@@ -330,6 +330,20 @@
         }
       </script>
 
+      <script type="text/javascript">
+        function init() {
+          if (location.hash.match('impressum') || location.hash.match('imprint')) {
+            document.getElementById('modalimprint').style.display = 'block'
+          }
+          if (location.hash.match('haftung') || location.hash.match('disclaimer')) {
+            document.getElementById('modaldisclaimer').style.display = 'block'
+          }
+          if (location.hash.match('datenschutz') || location.hash.match('privacy')) {
+            document.getElementById('modalprivacy').style.display = 'block'
+          }
+        } init()
+      </script>
+
   </body>
 
 </html>
