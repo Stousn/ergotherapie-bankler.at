@@ -77,9 +77,12 @@
                 <span class="w3-tag w3-padding w3-margin-bottom w3-round-large w3-cyan w3-center">Nachbehandlung bei Amputationen</span>
 
               <p class="w3-large w3-text-theme">
-                <b>
-                  <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-text-cyan"></i>Zusatzqualifikationen</b>
+                <b class="w3-hide-small"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-text-cyan"></i>Zusatzqualifikationen</b>
+                <b class="w3-hide-medium w3-hide-large w3-button w3-block w3-left-align" onclick="toggleQualifications('qualifications', false)" ><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-text-cyan"></i>Zusatzqualifikationen <i class="fa fa-caret-down"></i></b>
               </p>
+              
+              <div id="qualifications" class="w3-container w3-hide">
+               
               <p>Myofasziale Narbenbehandlung</p>
               <div class="w3-light-grey w3-round-xlarge">
                 <div class="w3-round-xlarge w3-cyan" style="height:24px;width:100%"></div>
@@ -109,6 +112,7 @@
                 <div class="w3-round-xlarge w3-cyan" style="height:24px;width:30%"></div>
               </div>
               <br>
+              </div>
             </div>
           </div>
           <br>
@@ -367,6 +371,24 @@
             document.getElementById('modalprivacy').style.display = 'block'
           }
         } init()
+
+        function toggleQualifications(id, init) {
+            var x = document.getElementById(id)
+            if (init && window.innerWidth > 600) {
+              console.log("INIT" + init)
+              console.log("WIDTH" + window.innerWidth)
+              x.className += " w3-show"
+              return
+            } else if (init) {
+              return
+            }
+
+            if (x.className.indexOf("w3-show") == -1) {
+              x.className += " w3-show"
+            } else {
+              x.className = x.className.replace(" w3-show", "")
+            }
+          } toggleQualifications('qualifications', true)
       </script>
 
   </body>
