@@ -1,6 +1,6 @@
-# [ergotherapie-bankler.at](https://ergotherapie-bankler.at)
+# [ergotherapie-reip.at](https://ergotherapie-reip.at)
 
-Website for Ergotherapie Bankler
+Website for Ergotherapie Reip
 
 ## Technologies
 ### Plain HTML/CSS
