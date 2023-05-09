@@ -12,6 +12,7 @@
   <meta name="theme-color" content="#00bcd4">
   <meta name="robots" content="all" />
   <link rel="stylesheet" href="styles/w3.css">
+  <link id="theme" rel="stylesheet" href="styles/w3-theme-cyan.css">
   <link rel="stylesheet" href='styles/roboto.css'>
   <link rel="stylesheet" href="styles/font-awesome.min.css">
   <link rel="stylesheet" href="styles/style.css">
@@ -32,10 +33,13 @@
 
     <!-- Page Container -->
     <div class="w3-content w3-margin-top maxpagewidth">
+
       
       <!-- The Grid -->
       <div class="w3-row-padding">
-
+        <button onclick="toggleDarkMode()"
+                id="toggleDarkMode"
+                title="Zwischen hellem und dunklem Modus umschalten" class="w3-theme"><i class="fa fa-lightbulb-o fa-fw w3-margin-right w3-large w3-text-white" style="margin-right: 0px!important;"></i></button>
         <!-- Left Column -->
         <div class="w3-third">
 
@@ -70,16 +74,15 @@
               <hr>
 
               <p class="w3-large">
-                <b> 
-                  <i class="fa fa-compass fa-fw w3-margin-right w3-text-cyan"></i>Kompetenzen</b>
+                <b><i class="fa fa-compass fa-fw w3-margin-right w3-text-cyan"></i>Kompetenzen</b>
               </p>
-                <span class="w3-tag w3-padding w3-margin-bottom w3-round-large w3-cyan w3-center">Orthopädie</span>
-                <span class="w3-tag w3-padding w3-margin-bottom w3-round-large w3-cyan w3-center">Handtherapie</span>
-                <span class="w3-tag w3-padding w3-margin-bottom w3-round-large w3-cyan w3-center">Rheumatologie</span>
-                <span class="w3-tag w3-padding w3-margin-bottom w3-round-large w3-cyan w3-center">Geriatrie</span>
-                <!--<span class="w3-tag w3-padding w3-margin-bottom w3-round-large w3-cyan w3-center">Nachbehandlung bei Amputationen</span>-->
+                <span class="w3-tag w3-padding w3-margin-bottom w3-round-large w3-theme w3-center">Orthopädie</span>
+                <span class="w3-tag w3-padding w3-margin-bottom w3-round-large w3-theme w3-center">Handtherapie</span>
+                <span class="w3-tag w3-padding w3-margin-bottom w3-round-large w3-theme w3-center">Rheumatologie</span>
+                <span class="w3-tag w3-padding w3-margin-bottom w3-round-large w3-theme w3-center">Geriatrie</span>
+                <!--<span class="w3-tag w3-padding w3-margin-bottom w3-round-large w3-theme w3-center">Nachbehandlung bei Amputationen</span>-->
 
-              <p class="w3-large w3-text-theme">
+              <p class="w3-large">
                 <b class="w3-hide-small"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-text-cyan"></i>Zusatzqualifikationen</b>
                 <b class="w3-hide-medium w3-hide-large w3-button w3-block w3-left-align" onclick="toggleQualifications('qualifications', false)" ><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-text-cyan"></i>Zusatzqualifikationen <i class="fa fa-caret-down"></i></b>
               </p>
@@ -88,31 +91,31 @@
                
               <p>Myofasziale Narbenbehandlung</p>
               <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-cyan" style="height:24px;width:100%"></div>
+                <div class="w3-round-xlarge w3-theme" style="height:24px;width:100%"></div>
               </div>
               <p>Spiegeltherapie</p>
               <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-cyan" style="height:24px;width:100%"></div>
+                <div class="w3-round-xlarge w3-theme" style="height:24px;width:100%"></div>
               </div>
               <p>Rückenschule</p>
               <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-cyan" style="height:24px;width:100%"></div>
+                <div class="w3-round-xlarge w3-theme" style="height:24px;width:100%"></div>
               </div>
               <p>Ergotherapie für Menschen mit Fatigue</p>
               <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-cyan" style="height:24px;width:100%"></div>
+                <div class="w3-round-xlarge w3-theme" style="height:24px;width:100%"></div>
               </div>
               <p>Clinical Management of Patients with COVID-19</p>
               <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-cyan" style="height:24px;width:100%"></div>
+                <div class="w3-round-xlarge w3-theme" style="height:24px;width:100%"></div>
               </div>
               <p>Manuelle Therapie für die obere Extremität i.A.</p>
               <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-cyan" style="height:24px;width:95%"></div>
+                <div class="w3-round-xlarge w3-theme" style="height:24px;width:95%"></div>
               </div>
               <p>Upledger CranioSacral Therapie i.A.</p>
               <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-cyan" style="height:24px;width:55%"></div>
+                <div class="w3-round-xlarge w3-theme" style="height:24px;width:55%"></div>
               </div>
               <br>
               </div>
@@ -175,7 +178,7 @@
                   <b>Preise</b>
                 </strong>
                 <table class="w3-table w3-bordered w3-hoverable table-small">
-                    <tr class="w3-cyan">
+                    <tr class="w3-theme">
                       <th>Länge</th>
                       <th>Art</th>
                       <th class="w3-align-right">Preis</th>
@@ -235,7 +238,7 @@
       <!-- End Page Container -->
     </div>
 
-    <footer class="w3-container w3-cyan w3-center w3-margin-top">
+    <footer class="w3-container w3-theme w3-center w3-margin-top">
       <button class="w3-padding-top w3-button" href="https://instagram.com/ergotherapie.reip" target="_blank" aria-label="Instagram-Seite von Ergotherapie Reip">
         <p class="button fa fa-instagram w3-hover-opacity w3-xlarge"></p>
       </button>
@@ -266,7 +269,7 @@
         </button>
       </p>
     </footer>
-    <footer class="w3-container w3-cyan w3-center w3-margin-top printonly">
+    <footer class="w3-container w3-theme w3-center w3-margin-top printonly">
       <p>&copy; Vanessa Reip - <a href="https://ergotherapie-reip.at/">ergotherapie-reip.at</a></p>
     </footer>
 
@@ -299,7 +302,7 @@
         <div class="w3-container">
           <p>Development und Betrieb: <a href="https://stefanreip.dev" target="_blank">stefanreip.dev</a></p>
         </div>
-        <footer class="w3-container w3-cyan">
+        <footer class="w3-container w3-theme">
           <p></p>
         </footer>
       </div>
@@ -329,7 +332,7 @@
                 Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem österreichischen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
             </p>
           </div>
-          <footer class="w3-container w3-cyan">
+          <footer class="w3-container w3-theme">
             <p class="w3-small"><i>Quelle: <a href="http://www.e-recht24.de" target="_blank">e-recht24.de</a></i></p>
           </footer>
         </div>
@@ -354,7 +357,7 @@
                 Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit über die im Impressum angegeben Adresse des Webseitenbetreibers an uns wenden.
             </p>
           </div>
-          <footer class="w3-container w3-cyan">
+          <footer class="w3-container w3-theme">
               <p class="w3-small"><i>Quelle: <a href="http://www.e-recht24.de" target="_blank">e-recht24.de</a></i></p>
           </footer>
         </div>
@@ -387,6 +390,27 @@
             document.getElementById('modalprivacy').style.display = 'block'
           }
         } init()
+
+        let isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        function setUiTheme() {
+          const cssStyle = document.getElementById('theme');
+
+          console.log(isDarkMode)
+          console.log(cssStyle)
+
+          if (isDarkMode) {
+           cssStyle.href = 'styles/w3-theme-cyan.css'
+          return;
+          }
+          cssStyle.href = 'styles/w3-theme-cyan-dark.css'
+          
+        } setUiTheme()
+
+        function toggleDarkMode() {
+          isDarkMode = !isDarkMode
+          setUiTheme()
+        }
 
         function toggleQualifications(id, init) {
             var x = document.getElementById(id)

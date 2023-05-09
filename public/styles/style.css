@@ -75,3 +75,29 @@ h6 {
 }
   /* ... the rest of the rules ... */
 }
+
+#toggleDarkMode {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+      box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),
+      0 4px 20px 0 rgba(0, 0, 0, 0.19)
+}
+#toggleDarkMode:hover {
+  background-color: #555;
+}
+
+@media only screen and (min-width: 380px) {
+  #toggleDarkMode {
+    position: fixed;
+    top: 20px;
+    bottom: unset;
+  }
+}
