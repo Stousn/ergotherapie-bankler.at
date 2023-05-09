@@ -1,4 +1,4 @@
-h2 {color:#000}
+h2#title {color:#000}
 .w3-theme-l5 {color: #000 !important;background-color: #edfdff !important}
 .w3-theme-l4 {color: #000 !important;background-color: #c4f8ff !important}
 .w3-theme-l3 {color: #000 !important;background-color: #89f1ff !important}
@@ -29,3 +29,7 @@ h2 {color:#000}
     border-bottom-color: rgb(70, 75, 79);
 }
 hr { border-top-color: rgb(63, 68, 71);}   
+.w3-modal-content {
+    background-color: rgb(25, 28, 29);
+    outline-color: initial;
+}
