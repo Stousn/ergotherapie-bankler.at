@@ -15,6 +15,11 @@ h6 {
 
 .printonly{display: none;}
 
+.title {
+    color: #fff !important;
+    text-shadow: 2px 2px 4px #000000 !important;
+}
+
 @media only screen and (max-width: 380px) and (min-width: 310px) {
     .table-small {
         padding: 0px 0px !important;
